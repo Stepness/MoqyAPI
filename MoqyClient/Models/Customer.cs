@@ -7,7 +7,7 @@ namespace MoqyClient.Models
 {
     public class Customer
     {
-        public int CustomerID { get; private set; }
+        public int CustomerID { get; set; }
 
         public string CustomerName { get; set; }
 

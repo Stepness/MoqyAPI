@@ -7,11 +7,11 @@ namespace MoqyClient.Models
 {
     public class Cart
     {
-        public int PurchaseID { get; private set; }
+        public int PurchaseID { get; set; }
 
-        public int CustomerID { get; private set; }
+        public int CustomerID { get; set; }
 
-        public int ProductID { get; private set; }
+        public int ProductID { get; set; }
 
         public DateTime PurchaseDate { get; set; }
 
