@@ -44,10 +44,10 @@ namespace MoqyAPI.Controllers
 
 
         [HttpPut("Update_Customer/{name}")]
-        public void Update_Customer(string name, Customer customer)
+        public void Update_Customer(string name,[FromBody] Customer customer)
         {
-            var customerToEdit = Customer.Customers.Where(x => x.CustomerName == name).First();
-            customerToEdit = customer;
+            var customerToEdit = Customer.Customers.FindIndex(x => x.CustomerName == name);
+            Customer.Customers[customerToEdit] = customer;
         }
 
 
