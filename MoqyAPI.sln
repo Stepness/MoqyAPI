@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqyAPI", "MoqyAPI\MoqyAPI.csproj", "{DB4789A9-8FC6-420E-9446-4E6F040C8C19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoqyAPI", "MoqyAPI\MoqyAPI.csproj", "{DB4789A9-8FC6-420E-9446-4E6F040C8C19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqyClient", "MoqyClient\MoqyClient.csproj", "{CBF95700-71CB-4086-AE08-E4112E49B936}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DB4789A9-8FC6-420E-9446-4E6F040C8C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB4789A9-8FC6-420E-9446-4E6F040C8C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB4789A9-8FC6-420E-9446-4E6F040C8C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF95700-71CB-4086-AE08-E4112E49B936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF95700-71CB-4086-AE08-E4112E49B936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF95700-71CB-4086-AE08-E4112E49B936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF95700-71CB-4086-AE08-E4112E49B936}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
