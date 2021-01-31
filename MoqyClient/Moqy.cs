@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace MoqyClient
 {
-    public class Program
+    public class Moqy
     {
         private static readonly HttpClient client = new HttpClient();
 
