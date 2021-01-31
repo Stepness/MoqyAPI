@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace MoqyClient
 {
@@ -10,26 +11,28 @@ namespace MoqyClient
     {
         private static readonly HttpClient client = new HttpClient();
 
-        HttpClient Client
+        static HttpClient Client
         {
             get
             {
-                client.BaseAddress = new Uri("https://moqyapi.azurewebsites.net/api");
+                client.BaseAddress = new Uri("https://moqyapi.azurewebsites.net/api/");
 
                 return client;
             }
         }
 
-        public async Task<List<Cart>> GetAll_Cart()
+        public static async Task<List<Cart>> GetAll_Cart()
         {
 
             HttpResponseMessage response = await Client.GetAsync("Shop/GetAll_PurchaseData");
 
             response.EnsureSuccessStatusCode();
 
-            string responseBody = response.Headers.ToString();
+            string responseBody = await response.Content.ReadAsStringAsync();
 
-            return new();
+            List<Cart> responseList = JsonConvert.DeserializeObject<List<Cart>>(responseBody);
+            
+            return responseList;
         }
     }
 
